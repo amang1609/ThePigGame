@@ -26,7 +26,7 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
             scores[activePlayer] += currentScore;
             document.getElementById('score-' + activePlayer).textContent = scores[activePlayer];
 
-            if (scores[activePlayer] >= 10){
+            if (scores[activePlayer] >= 100){
                 document.getElementById('name-' + activePlayer).textContent = 'WINNER!';
 
                 document.querySelector('.dice').style.display = 'none';
